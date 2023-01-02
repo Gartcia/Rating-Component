@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+    min-height: 100vh;
+}
+.form-container{
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background: linear-gradient(hsl(213, 40%, 18%),hsl(213, 20%, 18%),hsl(213, 19%, 18%));
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    height: 400px;
+    padding: 30px;
+    gap: 20px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+.form-container-centered{
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(hsl(213, 40%, 18%),hsl(213, 20%, 18%),hsl(213, 19%, 18%));
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    height: 400px;
+    padding: 30px;
+    gap: 20px;
+    transition: 0.4s;
+    overflow: hidden;
+}
+.form-container h1, .form-container-centered h1{
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+.form-container p{
+    font-weight: 400;
+    color: hsl(217, 12%, 63%);
+}
+.form-container-centered p{
+    font-weight: 400;
+    color: hsl(217, 12%, 63%);
+    text-align: center;
+}
+.star-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 25%);
+}
+.selected{
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(213, 19%, 25%);
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+.star-container img{
+    width: 10px;
+    height: 10px;
+}
+.form{
+    width: 100%;
+}
+.radio-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.radio-container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+input[type="radio"]{
+    cursor: pointer;
+    appearance: none;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    z-index: 999;
+}
+input[type="radio"]:hover+label{
+    background-color: hsl(216, 12%, 54%);
+}
+input[type="radio"]:checked+label{
+    background-color: hsl(25, 97%, 53%);
+}
+.radio-container label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: hsl(213, 19%, 25%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 0.3s;
+    color: hsl(0, 0%, 100%);
+}
+.submit{
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border: none;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    transition: 0.3s;
+}
+.submit:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+.hidden{
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
